@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic portfolio of Kehinde Adeshina, a Software Engineering undergraduate at Miva Open University.">
+  <title>Kehinde Adeshina | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Kehinde Adeshina<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <figure>
+        <img src="images/KAdeshina-Profile1.png" alt="Portrait photograph of Kehinde Adeshina" class="profile-photo" width="230" height="230">
+        <figcaption>Kehinde Adeshina, BSc Software Engineering</figcaption>
+      </figure>
+      <div class="hero-text">
+        <h1>Hello, I'm Kehinde Adeshina</h1>
+        <p class="tagline">First-year Software Engineering student at Miva Open University</p>
+        <p>Welcome to my corner of the web. I built this site from scratch as part of my Introduction to Web Technologies course, and it doubles as my personal portfolio and academic organiser. Have a look around: you can read about my background, browse the projects I have been working on, or even try the interactive planner I use to keep my studies on track.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn">View my projects</a>
+          <a href="contact.html" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <h2>A little about what I do</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>What I'm studying</h3>
+          <p>I am in my first year of a BSc in Software Engineering, currently focused on web technologies: how the Internet works, HTML for structure, CSS for presentation and JavaScript for behaviour.</p>
+        </article>
+        <article class="card">
+          <h3>What I build</h3>
+          <p>Small, useful things. So far that includes a revision notes site, a recipe collection and a quiz game. Each one taught me something new about writing cleaner, more organised code.</p>
+        </article>
+        <article class="card">
+          <h3>Where I'm heading</h3>
+          <p>My goal is to become a full-stack developer building software that solves everyday problems in Nigeria and beyond. This portfolio is step one of that journey.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="audio-section">
+      <h2>Site theme sound</h2>
+      <p>Every good project deserves a signature. Press play to hear the short audio ident I put together for this site.</p>
+      <audio controls>
+        <source src="media/welcome-message.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Kehinde Adeshina &middot; Built with HTML, CSS and JavaScript for CSC 106</p>
+    <p><a href="contact.html">Contact me</a> &middot; <a href="https://github.com/" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

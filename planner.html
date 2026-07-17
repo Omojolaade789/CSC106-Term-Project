@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive academic planner for adding, completing and deleting study tasks.">
+  <title>Kehinde Adeshina | Academic Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Kehinde Adeshina<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Planner</h1>
+    <p class="lead">Keeping up with lectures, assignments and revision takes planning. Add a task below, tick it off when it is done, or remove it entirely if plans change.</p>
+
+    <section class="planner">
+      <form id="taskForm" class="task-form" autocomplete="off">
+        <label for="taskInput" class="visually-hidden">Task description</label>
+        <input type="text" id="taskInput" placeholder="e.g. Revise CSS Flexbox before Friday's lab">
+        <label for="taskDate" class="visually-hidden">Due date</label>
+        <input type="date" id="taskDate" aria-label="Due date (optional)">
+        <button type="submit" class="btn">Add task</button>
+      </form>
+      <p id="plannerError" class="error-message" aria-live="polite"></p>
+
+      <p id="taskSummary" class="task-summary" aria-live="polite">No tasks yet. Add your first one above.</p>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Kehinde Adeshina &middot; Built with HTML, CSS and JavaScript for CSC 106</p>
+    <p><a href="contact.html">Contact me</a> &middot; <a href="https://github.com/" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
